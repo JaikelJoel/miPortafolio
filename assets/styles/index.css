@@ -1,0 +1,252 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Muli', sans-serif;
+}
+
+
+.minmax-container {
+  display: grid;
+  grid-template-columns: minmax(auto, 1024px);
+  justify-content: center;
+}
+.global-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  text-align: center;
+  background-color: black;
+  height: 100px;
+  width: 100%;
+}
+.header__logo--container {
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px  0 0 15px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 10px 0 0 0;
+}
+.header__menu {
+  display: flex;
+  text-align: end;
+  align-content: end;
+  margin: 0;
+  position: relative;
+  left: -25px;
+}
+
+.header__menu--item {
+  list-style-type: none;
+  display: flex;
+  margin: 0 8px 0 0;
+  font-family: 'Lato', sans-serif;
+}
+.header__menu--item a {
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 5px;
+}
+.header__menu--item a:hover {
+  color: #358af8;
+}
+
+.hero {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+strong {
+  color: #358af8;
+  animation: titleColorBlue 15s infinite;
+  transition-duration: .5s; 
+}
+@keyframes titleColorBlue {
+  30% {
+    color: #fff;
+  }
+}
+.hero__title {
+  font-family: 'Muli', sans-serif;
+  color: #fff;
+  font-size: 2em;
+  animation: titleColorWhite 15s infinite;
+  transition-duration: .5s;
+  margin: 20px 0 20px 20px;
+  line-height: 50px;
+  
+}
+@keyframes titleColorWhite {
+  30% {
+    color: #358af8;
+  }
+}
+
+.hero__img--container {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 5px 0;
+}
+.hero__img {
+  border-radius: 10px;
+  width: 80%;
+}
+
+.projects__container {
+  
+}
+
+.contact {
+  width: 100%;
+  height: 150px;
+  background-color: #026fff;
+  color: #fff;
+}
+.contact__form--email input {
+  background-size: 15px;
+  background-image: url(../images/envelope.svg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+  border-color: grey;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px 20px 10px 25px ;
+}
+.contact__form--email button {
+  border-radius: 5px;
+  padding: 8px 30px;
+  color: #fff;
+  background-color: transparent;
+  display: block;
+  margin: 10px 0 0 0;
+  font-weight: bold;
+}
+.contact__form--email button:hover {
+  background-color: #fff;
+  color: #026fff;
+}
+.contact__social {
+ text-align: end;
+}
+
+.contact__social--link {
+  display: inline-block;
+  background-size: 50px;
+  width: 50px;
+  height: 50px;
+  margin: 0 30px 0 0;
+}
+.contact__social--link:nth-of-type(3) {
+  margin: 0 60px 0 0;
+}
+.contact__social--link.twitter {
+  background-image: url(../images/twitter.svg);
+}
+.contact__social--link.github {
+  background-image: url(../images/github.svg);
+}
+.contact__social--link.linkedin {
+  background-image: url(../images/linkedin3.svg);
+}
+
+.footer {
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  text-align: center;
+}
+.footer__corazon {
+  color: red;
+}
+.footer h3 {
+  color: #fff;
+} 
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 870px) {
+  .hero__title {
+    font-size: 1.7em;
+  }
+
+  .header__menu--item a {
+    font-size: 0.9rem;
+    margin: 0 3px 0 0;
+    letter-spacing: .1px;
+  }
+
+}
+
+@media screen and (max-width: 784px) {
+  .global-container {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
+  }
+  .header {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+  }
+  .header__logo--container {
+    justify-content: center;
+  }
+  .header__nav {
+    text-align: center;
+    justify-content: center;
+  }
+  .header__menu {
+    display: initial;
+    text-align: center;
+  }
+  .header__menu--item {
+    text-align: center;
+    display: block;
+    margin: 5px 0 15px 0;
+  }
+  .hero {
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+  }
+  .hero__img {
+    width: 100%;
+  }
+
+  .contact {
+    height: auto;
+  }
+  .contact__form--email button {
+    margin: 1em auto;
+  }
+  .contact__social {
+    text-align: center;
+    margin: 5px 0 5px 0;
+  }
+  .contact__social--link:nth-of-type(3) {
+    margin: 0 20px 0 0;
+  }
+}
