@@ -1,5 +1,6 @@
 
 html {
+  font-size: 62.5%;
   box-sizing: border-box;
   height: 100%;
 }
@@ -13,12 +14,13 @@ body {
 }
 
 h2 {
+  font-size: 2.3rem;
   color: #026fff;
-  margin: 10px 0px 10px 20px;
+  margin: 1rem 0px 1rem 2rem;
 }
+
 img {
   max-width: 100%;
-
 }
 .minmax-container {
   display: grid;
@@ -35,21 +37,21 @@ img {
 .header {
   text-align: center;
   background-color: black;
-  height: 100px;
+  height: 10rem;
   width: 100%;
 }
 .header__logo--container {
   margin: 0;
   display: flex;
   justify-content: flex-start;
-  margin: 10px  0 0 15px;
+  margin: 1rem  0 0 1.5rem;
 }
 
 .header__nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin: 10px 0 0 0;
+  margin: 1rem 0 0 0;
 }
 .header__menu {
   display: flex;
@@ -63,16 +65,16 @@ img {
 .header__menu--item {
   list-style-type: none;
   display: flex;
-  margin: 0 8px 0 0;
+  margin: 0 .8rem 0 0;
   font-family: 'Lato', sans-serif;
 }
 .header__menu--item a {
   text-decoration: none;
   font-family: 'Lato', sans-serif;
   color: white;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
-  padding: 5px;
+  padding: .5rem;
 }
 .header__menu--item a:hover {
   color: #358af8;
@@ -96,11 +98,11 @@ strong {
 .hero__title {
   font-family: 'Muli', sans-serif;
   color: #fff;
-  font-size: 2em;
+  font-size: 3rem;
   animation: titleColorWhite 13s infinite;
   transition-duration: .5s;
-  margin: 20px 0 20px 20px;
-  line-height: 50px;
+  margin: 2rem 0 2rem 2rem;
+  line-height: 5rem;
   
 }
 @keyframes titleColorWhite {
@@ -115,17 +117,17 @@ strong {
   margin: 0 0 5px 0;
 }
 .hero__img {
-  border-radius: 10px;
+  border-radius: 1rem;
   width: 80%;
 }
 .projects__container {
   display: grid;
-  grid-template: 1fr 1fr / 1fr 1fr 1fr;
-  grid-gap: 5px;
-
+  grid-template: 1fr 1fr / repeat(4, 20rem);
+  grid-gap: 2rem ;
+  height: 100%;
+  justify-content: space-between;
 }
 .projects {
-  height: 100%;
   background-color: #fafafa ; 
  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f5f6f6+0,dbdce2+21,b8bac6+49,dddfe3+80,f5f6f6+100;Grey+Pipe */
   background: #f5f6f6; /* Old browsers */
@@ -133,13 +135,11 @@ strong {
   background: -webkit-linear-gradient(top,  #f5f6f6 0%,#dbdce2 21%,#b8bac6 49%,#dddfe3 80%,#f5f6f6 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom,  #f5f6f6 0%,#dbdce2 21%,#b8bac6 49%,#dddfe3 80%,#f5f6f6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=0 ); /* IE6-9 */
-
-
-
   width: 100%;
 }
 .projects__items {
-  margin: 10px;
+  height: 95%;
+  margin: 1rem;
   text-align: center;
   /* box-shadow: 0px 0px 0px white; */
   transform: translateX(0);
@@ -160,7 +160,7 @@ strong {
   content: '';
   top: 100%;
   left: 5%;
-  height: 10px;
+  height: 1rem;
   width: 90%;
   opacity: 0;
   background: -webkit-radial-gradient(center, ellipse,
@@ -181,17 +181,20 @@ strong {
 }
 .projects__items img {
   width: 100%;
-  height: 100%;
+  height: 95%;
 }
 .contact {
-  margin: 15px 0px 0px 0px;
+  margin: 1.5rem 0px 0px 0px;
   width: 100%;
-  height: 150px;
+  height: 14rem;
   background-color: #026fff;
   color: #fff;
 }
+.contact h3 {
+  font-size: 1.5rem;
+}
 .contact__form--email input {
-  background-size: 15px;
+  background-size: 1.5rem;
   background-image: url(../images/envelope.svg);
   background-repeat: no-repeat;
   background-position-y: center;
@@ -199,15 +202,15 @@ strong {
   border-color: grey;
   border-style: solid;
   border-radius: 5px;
-  padding: 10px 20px 10px 25px ;
+  padding: 1rem 2rem 1rem 2.5rem ;
 }
 .contact__form--email button {
-  border-radius: 5px;
-  padding: 8px 30px;
+  border-radius: .5rem;
+  padding: .8rem 3rem;
   color: #fff;
   background-color: transparent;
   display: block;
-  margin: 10px 0 0 0;
+  margin: 1rem 0 0 0;
   font-weight: bold;
 }
 .contact__form--email button:hover {
@@ -226,7 +229,7 @@ strong {
   margin: 0 30px 0 0;
 }
 .contact__social--link:nth-of-type(3) {
-  margin: 0 60px 0 0;
+  margin: 0 5rem 0 0;
 }
 .contact__social--link.twitter {
   background-image: url(../images/twitter.svg);
@@ -240,7 +243,7 @@ strong {
 
 .footer {
   width: 100%;
-  height: 80px;
+  height: 8rem;
   background-color: black;
   text-align: center;
 }
@@ -249,22 +252,23 @@ strong {
 }
 .footer h3 {
   color: #fff;
+  font-size: 1.7rem;
 } 
 
 @media screen and (max-width: 870px) {
   .hero__title {
-    font-size: 1.7em;
+    font-size: 2.6rem;
   }
 
-  .header__menu--item a {
+  /* .header__menu--item a {
     font-size: 0.9rem;
     margin: 0 3px 0 0;
     letter-spacing: .1px;
-  }
+  } */
 
   .projects__container {
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 1rem;
   } 
 }
 @media screen and (max-width: 784px) {
@@ -293,7 +297,7 @@ strong {
   .header__menu--item {
     text-align: center;
     display: block;
-    margin: 5px 0 15px 0;
+    margin: .5rem 0 1.5rem 0;
   }
   .hero {
     justify-content: center;
@@ -307,7 +311,7 @@ strong {
 
   /* .projects__container {
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 1rem;
   } */
 
   .contact {
@@ -318,16 +322,16 @@ strong {
   }
   .contact__social {
     text-align: center;
-    margin: 5px 0 5px 0;
+    margin: .5rem 0 .5rem 0;
   }
   .contact__social--link:nth-of-type(3) {
-    margin: 0 20px 0 0;
+    margin: 0 2rem 0 0;
   }
 }
   @media screen and (max-width: 480px) {
     .projects__container {
       grid-template-columns: 1fr;
-      grid-gap: 10px;
+      grid-gap: 1rem;
   }
   .projects__items img {
     width: 95%;
@@ -335,8 +339,8 @@ strong {
   }
   @media screen and (max-width: 399px) {
     .hero__title {
-      font-size: 1.4em;
-      margin: 15px 10px 0 10px;
+      font-size: 2rem;
+      margin: 1.5rem 1rem 0 1rem;
     }
   }
 }
